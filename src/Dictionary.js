@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Dictionary() {
+  let [keyword, setKeyboard] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
-    alert("searching");
+    alert(`Just a moment, searching for "${keyword}"`);
   }
   function loadKeyword(event) {
-    console.log(event.target.value);
+    setKeyboard(event.target.value);
   }
 
   return (
@@ -14,6 +16,7 @@ export default function Dictionary() {
       <div>What word do you want to look up?</div>
       <form onSubmit={handleSubmit}>
         <input type="search" onChange={loadKeyword}></input>
+        <input type="submit"></input>
       </form>
     </div>
   );
