@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Synonyms from "./Synonyms.js";
 
 export default function Results(props) {
   if (props.results) {
@@ -14,6 +15,7 @@ export default function Results(props) {
               <strong>{definition.partOfSpeech}</strong>
               <br />
               <p>{definition.definition}</p>
+              <Synonyms synonyms={definition.synonyms} />
             </div>
           );
         })}
