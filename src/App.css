@@ -1,4 +1,27 @@
 .container {
   text-align: center;
   max-width: 800px;
+  background: #e7eaf6;
+}
+.App-header {
+  font-family: "Cormorant", serif;
+  margin: 9px;
+}
+.App-header h1 {
+  padding: 30px;
+  font-size: 65px;
+}
+.container footer {
+  margin-top: 100px;
+}
+
+.Results {
+  margin: 20px 100px;
+  text-align: left;
+}
+.Results ::first-letter {
+  text-transform: capitalize;
+}
+.Dictionary input {
+  margin-top: 20px;
 }

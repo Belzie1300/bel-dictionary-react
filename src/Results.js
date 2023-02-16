@@ -1,21 +1,23 @@
 import React from "react";
+import "./App.css";
 
 export default function Results(props) {
   if (props.results) {
     return (
-      <div>
-        {props.results.word}
+      <div className="Results">
+        <h2>{props.results.word}</h2>
+
+        <span>{props.results.phonetic}</span>
         {props.results.meanings.map(function (definition, index) {
           return (
             <div key={index}>
-              {definition.partOfSpeech}
+              <strong>{definition.partOfSpeech}</strong>
               <br />
-              {definition.definition}
+              <p>{definition.definition}</p>
             </div>
           );
         })}
         <br />
-        {props.results.phonetic}
       </div>
     );
   } else return null;

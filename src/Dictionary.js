@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import "./App.css";
 
 export default function Dictionary() {
   let [keyword, setKeyboard] = useState("");
@@ -27,7 +28,6 @@ export default function Dictionary() {
       <div>What word do you want to look up?</div>
       <form onSubmit={handleSubmit}>
         <input type="search" onChange={loadKeyword}></input>
-        <input type="submit" value="Enter"></input>
       </form>
       <Results results={results} />
     </div>
