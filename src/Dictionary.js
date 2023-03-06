@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import Results from "./Results";
+import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyboard] = useState("");
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
     setResults(response.data[0]);
   }
 
@@ -24,10 +24,16 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <div>What word do you want to look up?</div>
-      <form onSubmit={handleSubmit}>
-        <input type="search" onChange={loadKeyword}></input>
-      </form>
+      <h5>What word do you want to look up?</h5>
+      <section>
+        <form onSubmit={handleSubmit}>
+          <input type="search" onChange={loadKeyword}></input>
+        </form>
+        <div className="hint">
+          {" "}
+          suggested words: clouds, sage, clay, hotspring...{" "}
+        </div>
+      </section>
       <Results results={results} />
     </div>
   );
