@@ -1,0 +1,15 @@
+.Audio a {
+  text-decoration: none;
+  border: 1px solid #6e7da2;
+  padding: 10px;
+  background: #6e7da2;
+  border-radius: 15px;
+  transition: all 120ms ease-in-out;
+  color: #fff;
+  line-height: 4.5;
+}
+
+.Audio a:hover {
+  color: #6e7da2;
+  background-color: #fff;
+}

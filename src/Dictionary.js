@@ -6,7 +6,7 @@ import "./Dictionary.css";
 import Photos from "./Photos.js";
 
 export default function Dictionary(props) {
-  let [keyword, setKeyboard] = useState(props.defaultKeyword);
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
@@ -35,7 +35,7 @@ export default function Dictionary(props) {
     search();
   }
   function loadKeyword(event) {
-    setKeyboard(event.target.value);
+    setKeyword(event.target.value);
   }
   function load() {
     setLoaded(true);
