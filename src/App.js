@@ -7,7 +7,7 @@ export default function App() {
         <header className="App-header">
           <h1>Dictionary</h1>
         </header>
-        <Dictionary />
+        <Dictionary defaultKeyword="sunset" />
         <footer>Coded by Belinda Dinh and is open-sourced</footer>
       </div>
     </div>
