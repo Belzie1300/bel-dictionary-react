@@ -1,0 +1,11 @@
+.Photos {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 37px;
+  box-shadow: 0 3px 10pc rgba(0, 0, 0, 0.5);
+}
+
+.Photos img {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

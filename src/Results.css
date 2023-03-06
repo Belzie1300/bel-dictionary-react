@@ -6,3 +6,7 @@
   font-weight: 500;
   margin-bottom: 5px;
 }
+
+.Results h4::first-letter {
+  text-transform: capitalize;
+}
