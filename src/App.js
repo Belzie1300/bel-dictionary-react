@@ -8,7 +8,12 @@ export default function App() {
           <h1>Dictionary</h1>
         </header>
         <Dictionary defaultKeyword="sunset" />
-        <footer>Coded by Belinda Dinh and is open-sourced</footer>
+        <footer>
+          Coded by Belinda Dinh and is open-sourced on{" "}
+          <a href="https://github.com/Belzie1300/bel-dictionary-react">
+            GitHub
+          </a>
+        </footer>
       </div>
     </div>
   );
