@@ -1,0 +1,8 @@
+.Results .partOfSpeech::first-letter {
+  text-transform: capitalize;
+}
+.Results .partOfSpeech {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
